@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink Login</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <!-- =====================================================
+         LEFT SIDE
+         ===================================================== -->
+
+    <div class="left">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <span class="logo-icon">♥</span>
+
+            <div>
+
+                <h1>LifeLink</h1>
+
+                <p>
+                    Smart Emergency Blood & Organ Donor Network
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ALERT -->
+
+        <div class="alert-box">
+
+            <i class="fa-solid fa-bell"></i>
+
+            <span>
+                12 Active Emergency Requests Today
+            </span>
+
+        </div>
+
+
+        <!-- HERO TEXT -->
+
+        <div class="hero-text">
+
+            <h1>
+
+                Save Lives,<br>
+
+                <span>
+                    Be a Hero.
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                LifeLink connects blood & organ donors with patients
+                during emergencies. Together we can save lives.
+
+            </p>
+
+        </div>
+
+
+        <!-- STATS -->
+
+        <div class="stats">
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <div>
+
+                    <h3>
+                        25,000+
+                    </h3>
+
+                    <p>
+                        Registered Donors
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-hospital"></i>
+
+                <div>
+
+                    <h3>
+                        500+
+                    </h3>
+
+                    <p>
+                        Hospitals Connected
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <div>
+
+                    <h3>
+                        Instant
+                    </h3>
+
+                    <p>
+                        Emergency Alerts
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <div>
+
+                    <h3>
+                        Secure
+                    </h3>
+
+                    <p>
+                        Trusted Platform
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         RIGHT SIDE
+         ===================================================== -->
+
+    <div class="right">
+
+
+        <!-- =================================================
+             FLIP CARD
+             ================================================= -->
+
+        <div
+            class="login-card"
+            id="loginCard"
+        >
+
+
+            <!-- =================================================
+                 FRONT = SIGN UP
+                 ================================================= -->
+
+            <div class="card-face card-front">
+
+
+                <h1>
+                    Welcome! ❤️
+                </h1>
+
+
+                <p>
+                    Create your account and start saving lives.
+                </p>
+
+
+                <h4>
+                    Register As
+                </h4>
+
+
+                <!-- ROLES -->
+
+                <div class="roles">
+
+
+                    <div class="role active">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <span>
+                            Donor
+                        </span>
+
+                    </div>
+
+
+                    <div class="role">
+
+                        <i class="fa-solid fa-user-injured"></i>
+
+                        <span>
+                            Patient
+                        </span>
+
+                    </div>
+
+
+                    <div class="role">
+
+                        <i class="fa-solid fa-hospital"></i>
+
+                        <span>
+                            Hospital
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- SIGNUP FORM -->
+
+                <form id="signupForm">
+
+
+                    <!-- NAME -->
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <input
+                            id="signupName"
+                            type="text"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            id="signupEmail"
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            id="signupPassword"
+                            type="password"
+                            placeholder="Create password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            id="signupConfirmPassword"
+                            type="password"
+                            placeholder="Confirm password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- SIGNUP BUTTON -->
+
+                    <button
+                        class="login-btn"
+                        id="signupBtn"
+                        type="button"
+                    >
+
+                        ❤️ Create Account
+
+                    </button>
+
+
+                </form>
+
+
+                <!-- LOGIN LINK -->
+
+                <p class="register">
+
+                    Already have an account?
+
+                    <a
+                        href="#"
+                        id="showLogin"
+                    >
+                        Login
+                    </a>
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 BACK = LOGIN
+                 ================================================= -->
+
+            <div class="card-face card-back">
+
+
+                <h1>
+                    Welcome Back! ❤️
+                </h1>
+
+
+                <p>
+                    Login to continue helping save lives.
+                </p>
+
+
+                <h4>
+                    Login As
+                </h4>
+
+
+                <!-- ROLES -->
+
+                <div class="roles">
+
+                    <div class="role active" data-role="donor">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Donor</span>
+                    </div>
+
+                    <div class="role" data-role="patient">
+                        <i class="fa-solid fa-user-injured"></i>
+                        <span>Patient</span>
+                    </div>
+
+                    <div class="role" data-role="hospital">
+                        <i class="fa-solid fa-hospital"></i>
+                        <span>Hospital</span>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <!-- LOGIN FORM -->
+
+                <form id="loginForm">
+
+
+                    <!-- EMAIL -->
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            id="loginEmail"
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            id="loginPassword"
+                            type="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <i
+                            class="fa-solid fa-eye toggle"
+                            id="loginToggle"
+                        ></i>
+
+                    </div>
+
+
+                    <!-- OPTIONS -->
+
+                    <div class="options">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            Remember Me
+
+                        </label>
+
+
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- LOGIN BUTTON -->
+
+                    <button
+                        class="login-btn"
+                        id="loginBtn"
+                        type="button"
+                    >
+
+                        ❤️ Login Securely
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- OR -->
+
+                <div class="or">
+
+                    <span>
+                        OR
+                    </span>
+
+                </div>
+
+
+                <!-- SIGNUP LINK -->
+
+                <p class="register">
+
+                    Don't have an account?
+
+                    <a
+                        href="#"
+                        id="showSignup"
+                    >
+                        Sign Up
+                    </a>
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="log.js"></script>
+
+
+</body>
+
+</html>

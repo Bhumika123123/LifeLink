@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Generate Donation Request - LifeLink</title>
+
+    <link rel="stylesheet" href="donor-requests.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">♥</span>
+
+            <div>
+                <h2>LifeLink</h2>
+                <p>Donate to Save Lives</p>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="../home/home.html">Home</a>
+            <a href="../home/home.html#about">About Us</a>
+            <a href="donor-requests.html" class="active">New Donor</a>
+            <a href="../loginpage/login.html" class="logout-btn">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <main class="page">
+
+        <section class="page-heading">
+
+            <h1>Generate a Donation Request</h1>
+
+            <p class="subtitle">
+                Help save a life by sending your donation request to a nearby hospital.
+            </p>
+
+        </section>
+
+
+        <form id="donorForm" novalidate>
+
+            <!-- ================= 1. DONOR INFORMATION ================= -->
+
+            <section class="card">
+
+                <div class="section-title">
+                    <span>👤</span>
+                    <h2>Donor Information</h2>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
+                        <label for="donorName">
+                            Donor Full Name <span class="required-mark">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="donorName"
+                            placeholder="Enter your full name"
+                        >
+
+                        <small class="field-error" data-error-for="donorName"></small>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="age">
+                            Age <span class="required-mark">*</span>
+                        </label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            min="18"
+                            placeholder="Enter age"
+                        >
+
+                        <small class="field-error" data-error-for="age"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender <span class="required-mark">*</span>
+                        </label>
+
+                        <select id="gender">
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                        <small class="field-error" data-error-for="gender"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bloodGroup">
+                            Blood Group <span class="required-mark">*</span>
+                        </label>
+
+                        <select id="bloodGroup">
+                            <option value="">Select Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+
+                        <small class="field-error" data-error-for="bloodGroup"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Contact Number <span class="required-mark">*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            maxlength="10"
+                            placeholder="Enter 10-digit contact number"
+                        >
+
+                        <small class="field-error" data-error-for="phone"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email <span class="required-mark">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter email address"
+                        >
+
+                        <small class="field-error" data-error-for="email"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="city">
+                            City <span class="required-mark">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            list="citySuggestions"
+                            placeholder="Start typing your city"
+                            autocomplete="off"
+                        >
+
+                        <datalist id="citySuggestions">
+                            <option value="Pune">
+                            <option value="Chandigarh">
+                            <option value="Mohali">
+                            <option value="Delhi">
+                            <option value="Mumbai">
+                            <option value="Bengaluru">
+                            <option value="Kolkata">
+                            <option value="Chennai">
+                            <option value="Hyderabad">
+                            <option value="Amritsar">
+                        </datalist>
+
+                        <small class="field-error" data-error-for="city"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="state">
+                            State <span class="required-mark">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="state"
+                            list="stateSuggestions"
+                            placeholder="Start typing your state"
+                            autocomplete="off"
+                        >
+
+                        <datalist id="stateSuggestions">
+                            <option value="Punjab">
+                            <option value="Maharashtra">
+                            <option value="Haryana">
+                            <option value="Himachal Pradesh">
+                            <option value="Delhi">
+                            <option value="Karnataka">
+                            <option value="Tamil Nadu">
+                            <option value="Telangana">
+                            <option value="Uttar Pradesh">
+                            <option value="West Bengal">
+                            <option value="Gujarat">
+                            <option value="Rajasthan">
+                            <option value="Kerala">
+                            <option value="Bihar">
+                            <option value="Uttarakhand">
+                            <option value="Jammu and Kashmir">
+                        </datalist>
+
+                        <small class="field-error" data-error-for="state"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="pincode">
+                            Pincode <span class="required-mark">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pincode"
+                            inputmode="numeric"
+                            maxlength="6"
+                            placeholder="Enter 6-digit pincode"
+                        >
+
+                        <small class="field-error" data-error-for="pincode"></small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= 2. DONATION TYPE ================= -->
+
+            <section class="card">
+
+                <div class="section-title">
+                    <span>❤️</span>
+                    <h2>Donation Type</h2>
+                </div>
+
+                <p class="section-intro">
+                    What would you like to donate?
+                    <span class="required-mark">*</span>
+                </p>
+
+
+                <div class="donation-groups">
+
+                    <!-- BLOOD -->
+
+                    <div class="donation-group">
+
+                        <h3>Blood Donation</h3>
+
+                        <p>
+                            Donate blood to help patients in urgent need.
+                        </p>
+
+                        <div class="donation-options">
+
+                            <label class="donation-option">
+
+                                <input
+                                    type="radio"
+                                    name="donationType"
+                                    value="Blood"
+                                    checked
+                                >
+
+                                <span class="option-card">
+
+                                    <span class="option-icon">🩸</span>
+
+                                    <span class="option-label">
+                                        Blood
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ORGAN / TISSUE -->
+
+                    <div class="donation-group organ-group">
+
+                        <h3>Organ / Tissue Donation</h3>
+
+                        <p>
+                            Offer an organ or tissue donation to a selected hospital.
+                        </p>
+
+
+                        <div class="donation-options">
+
+                            <label class="donation-option">
+
+                                <input
+                                    type="radio"
+                                    name="donationType"
+                                    value="Kidney"
+                                >
+
+                                <span class="option-card">
+                                    <span class="option-icon">🫀</span>
+                                    <span class="option-label">Kidney</span>
+                                </span>
+
+                            </label>
+
+
+                            <label class="donation-option">
+
+                                <input
+                                    type="radio"
+                                    name="donationType"
+                                    value="Liver"
+                                >
+
+                                <span class="option-card">
+                                    <span class="option-icon">🫀</span>
+                                    <span class="option-label">Liver</span>
+                                </span>
+
+                            </label>
+
+
+                            <label class="donation-option">
+
+                                <input
+                                    type="radio"
+                                    name="donationType"
+                                    value="Lung"
+                                >
+
+                                <span class="option-card">
+                                    <span class="option-icon">🫁</span>
+                                    <span class="option-label">Lung</span>
+                                </span>
+
+                            </label>
+
+
+                            <label class="donation-option">
+
+                                <input
+                                    type="radio"
+                                    name="donationType"
+                                    value="Bone Marrow"
+                                >
+
+                                <span class="option-card">
+                                    <span class="option-icon">🧬</span>
+                                    <span class="option-label">Bone Marrow</span>
+                                </span>
+
+                            </label>
+
+
+                            <label class="donation-option">
+
+                                <input
+                                    type="radio"
+                                    name="donationType"
+                                    value="Eye/Cornea"
+                                >
+
+                                <span class="option-card">
+                                    <span class="option-icon">👁️</span>
+                                    <span class="option-label">Eye / Cornea</span>
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-note">
+
+                    Organ and tissue donation is subject to medical
+                    evaluation and applicable eligibility requirements.
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= 3. DONATION DETAILS ================= -->
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span>📋</span>
+
+                    <h2>Donation Details</h2>
+
+                </div>
+
+
+                <!-- BLOOD DETAILS -->
+
+                <div id="bloodDetails" class="details-panel">
+
+                    <p class="section-intro">
+                        Blood donation details
+                    </p>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="bloodGroupDetail">
+                                Blood Group <span class="required-mark">*</span>
+                            </label>
+
+                            <select id="bloodGroupDetail">
+
+                                <option value="">
+                                    Select Blood Group
+                                </option>
+
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+
+                            </select>
+
+                            <small
+                                class="field-error"
+                                data-error-for="bloodGroupDetail">
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="requiredUnits">
+                                Required Units <span class="required-mark">*</span>
+                            </label>
+
+                            <input
+                                type="number"
+                                id="requiredUnits"
+                                min="1"
+                                placeholder="Minimum 1"
+                            >
+
+                            <small
+                                class="field-error"
+                                data-error-for="requiredUnits">
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="preferredDonationDate">
+                                Preferred Donation Date
+                                <span class="required-mark">*</span>
+                            </label>
+
+                            <input
+                                type="date"
+                                id="preferredDonationDate"
+                            >
+
+                            <small
+                                class="field-error"
+                                data-error-for="preferredDonationDate">
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORGAN DETAILS -->
+
+                <div id="organDetails" class="details-panel hidden">
+
+                    <p class="section-intro">
+                        Organ / tissue donation details
+                    </p>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="selectedOrgan">
+                                Selected Organ/Tissue
+                                <span class="required-mark">*</span>
+                            </label>
+
+                            <select id="selectedOrgan">
+
+                                <option value="">
+                                    Select Organ/Tissue
+                                </option>
+
+                                <option value="Kidney">
+                                    Kidney
+                                </option>
+
+                                <option value="Liver">
+                                    Liver
+                                </option>
+
+                                <option value="Lung">
+                                    Lung
+                                </option>
+
+                                <option value="Bone Marrow">
+                                    Bone Marrow
+                                </option>
+
+                                <option value="Eye/Cornea">
+                                    Eye/Cornea
+                                </option>
+
+                            </select>
+
+                            <small
+                                class="field-error"
+                                data-error-for="selectedOrgan">
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="organCity">
+                                City/Location
+                                <span class="required-mark">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="organCity"
+                                placeholder="City where you can donate"
+                            >
+
+                            <small
+                                class="field-error"
+                                data-error-for="organCity">
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="organAdditionalInfo">
+                                Additional Information
+                            </label>
+
+                            <textarea
+                                id="organAdditionalInfo"
+                                placeholder="Share any helpful non-medical details for the hospital"
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HOSPITAL SELECTION -->
+
+                <div class="hospital-selection">
+                    <div class="form-group">
+
+                        <label for="hospitalName">
+                            Select Hospital
+                            <span class="required-mark">*</span>
+                        </label>
+
+                        <select id="hospitalName">
+
+                            <option value="">
+                                Select a hospital
+                            </option>
+
+                            <option value="PGI Chandigarh">
+                                PGI Chandigarh
+                            </option>
+
+                            <option value="Fortis Hospital">
+                                Fortis Hospital
+                            </option>
+
+                            <option value="Max Hospital">
+                                Max Hospital
+                            </option>
+
+                            <option value="Government Hospital Mohali">
+                                Government Hospital Mohali
+                            </option>
+
+                        </select>
+
+                        <small
+                            class="field-error"
+                            data-error-for="hospitalName">
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= 4. HEALTH INFORMATION ================= -->
+
+            <section class="card health-information">
+
+                <div class="section-title">
+
+                    <span>✚</span>
+
+                    <h2>Health Information</h2>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="weight">
+                            Weight (kg)
+                            <span class="required-mark">*</span>
+                        </label>
+
+                        <input
+                            type="number"
+                            id="weight"
+                            min="1"
+                            step="0.1"
+                            placeholder="Enter weight"
+                        >
+
+                        <small
+                            class="field-error"
+                            data-error-for="weight">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="hemoglobin">
+                            Hemoglobin (g/dL)
+                            <span class="required-mark">*</span>
+                        </label>
+
+                        <input
+                            type="number"
+                            id="hemoglobin"
+                            min="0"
+                            step="0.1"
+                            placeholder="Enter hemoglobin"
+                        >
+
+                        <small
+                            class="field-error"
+                            data-error-for="hemoglobin">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bloodPressure">
+                            Blood Pressure
+                            <span class="required-mark">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="bloodPressure"
+                            placeholder="e.g. 120/80"
+                        >
+
+                        <small
+                            class="field-error"
+                            data-error-for="bloodPressure">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="chronicDisease">
+                            Any Chronic Disease?
+                            <span class="required-mark">*</span>
+                        </label>
+
+                        <select id="chronicDisease">
+
+                            <option value="">
+                                Select an option
+                            </option>
+
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+
+                        </select>
+
+                        <small
+                            class="field-error"
+                            data-error-for="chronicDisease">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="medication">
+                            Currently on Medication?
+                            <span class="required-mark">*</span>
+                        </label>
+
+                        <select id="medication">
+
+                            <option value="">
+                                Select an option
+                            </option>
+
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+
+                        </select>
+
+                        <small
+                            class="field-error"
+                            data-error-for="medication">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="allergies">
+                            Any Allergies?
+                        </label>
+
+                        <input
+                            type="text"
+                            id="allergies"
+                            placeholder="Enter if any"
+                        >
+
+                        <small
+                            class="field-error"
+                            data-error-for="allergies">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="smoker">
+                            Smoker?
+                            <span class="required-mark">*</span>
+                        </label>
+
+                        <select id="smoker">
+
+                            <option value="">
+                                Select an option
+                            </option>
+
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+
+                        </select>
+
+                        <small
+                            class="field-error"
+                            data-error-for="smoker">
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= 5. SUBMIT ================= -->
+
+            <section class="card submit-card">
+
+                <div class="section-title">
+
+                    <span>✚</span>
+
+                    <h2>Generate Donation Request</h2>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="register-btn"
+                >
+                    Generate Donation Request
+                </button>
+
+
+                <p
+                    id="successMessage"
+                    class="success-message">
+                </p>
+
+            </section>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 LifeLink. All rights reserved. ❤️
+
+    </footer>
+
+
+    <script src="donor-requests.js"></script>
+
+</body>
+
+</html>

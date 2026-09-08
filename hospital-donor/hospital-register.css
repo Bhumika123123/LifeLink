@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #17213a;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* ================= LEFT SECTION ================= */
+
+.left-section {
+    width: 52%;
+    padding: 28px 45px;
+    background: #fffafa;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    background: #d93636;
+    color: white;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.brand h2 {
+    font-size: 28px;
+    color: #14213d;
+}
+
+.brand p {
+    font-size: 10px;
+    color: #777;
+}
+
+
+/* ================= EMERGENCY ALERT ================= */
+
+.emergency-alert {
+    margin-top: 20px;
+    width: 330px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: #fff0f0;
+    color: #c93636;
+    font-size: 13px;
+}
+
+.emergency-alert span {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+    font-size: 11px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-content {
+    margin-top: 70px;
+    max-width: 480px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    color: #17213a;
+}
+
+.hero-content h1 span {
+    color: #d93636;
+}
+
+.hero-content > p {
+    margin-top: 18px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #596174;
+}
+
+
+/* ================= STATS ================= */
+
+.stats {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    background: #fff0f0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.stat h3 {
+    font-size: 17px;
+    color: #17213a;
+}
+
+.stat p {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* ================= RIGHT SECTION ================= */
+
+.right-section {
+    width: 48%;
+    min-height: 100vh;
+    background: #fffafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px 30px 20px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 35px 50px;
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= HOSPITAL ICON ================= */
+
+.hospital-icon {
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    background: #fff0f0;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 26px;
+}
+
+.register-card h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 27px;
+    color: #17213a;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 25px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ================= FORM ================= */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #30384d;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    border: 1px solid #e2e4e9;
+    border-radius: 9px;
+
+    padding: 12px 14px;
+
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+
+    outline: none;
+    background: #fff;
+
+    transition: 0.2s;
+}
+
+input {
+    height: 44px;
+}
+
+textarea {
+    height: 70px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #d93636;
+
+    box-shadow:
+        0 0 0 3px #fff0f0;
+}
+
+
+/* ================= ERROR ================= */
+
+small {
+    display: block;
+    min-height: 14px;
+    margin-top: 4px;
+
+    font-size: 11px;
+    color: #d93636;
+}
+
+
+/* ================= TERMS ================= */
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 15px 0;
+}
+
+.terms input {
+    width: auto;
+    height: auto;
+}
+
+.terms label {
+    font-size: 12px;
+    color: #666;
+}
+
+
+/* ================= BUTTON ================= */
+
+.register-btn {
+    width: 100%;
+
+    border: none;
+    border-radius: 9px;
+
+    padding: 13px;
+
+    background: #d93636;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.register-btn:hover {
+    background: #bd2929;
+    transform: translateY(-1px);
+}
+
+.register-btn:active {
+    transform: translateY(0);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .page {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+
+    .left-section {
+        padding: 30px;
+    }
+
+    .right-section {
+        padding: 30px;
+        min-height: auto;
+    }
+
+    .hero-content {
+        margin-top: 45px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .left-section {
+        padding: 25px 20px;
+    }
+
+    .right-section {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content > p {
+        font-size: 15px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .emergency-alert {
+        width: 100%;
+    }
+
+    .register-card {
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+    .register-card h1 {
+        font-size: 23px;
+    }
+
+}

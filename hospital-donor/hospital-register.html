@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Registration | LifeLink</title>
+
+    <link rel="stylesheet" href="hospital-register.css">
+
+</head>
+
+
+<body>
+
+    <div class="page">
+
+
+        <!-- ================= LEFT SECTION ================= -->
+
+        <section class="left-section">
+
+            <div class="brand">
+
+                <div class="logo">
+                    ♥
+                </div>
+
+                <div>
+
+                    <h2>
+                        LifeLink
+                    </h2>
+
+                    <p>
+                        Smart Emergency Blood & Organ Donor Network
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="emergency-alert">
+
+                🚨
+                <strong>
+                    12 Active Emergency Requests Today
+                </strong>
+
+                <span>
+                    Every donation can save up to 3 lives. ❤️
+                </span>
+
+            </div>
+
+
+            <div class="hero-content">
+
+                <h1>
+                    Join LifeLink.<br>
+
+                    <span>
+                        Save More Lives.
+                    </span>
+                </h1>
+
+
+                <p>
+                    Connect your hospital with verified donors
+                    and patients during critical emergencies.
+                </p>
+
+
+                <div class="stats">
+
+
+                    <div class="stat">
+
+                        <div class="icon">
+                            👥
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                25,000+
+                            </h3>
+
+                            <p>
+                                Registered Donors
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="icon">
+                            🏥
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                500+
+                            </h3>
+
+                            <p>
+                                Hospitals Connected
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="icon">
+                            🔔
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Instant
+                            </h3>
+
+                            <p>
+                                Emergency Alerts
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="icon">
+                            🛡️
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Secure
+                            </h3>
+
+                            <p>
+                                & Trusted Platform
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= RIGHT SECTION ================= -->
+
+        <section class="right-section">
+
+
+            <div class="register-card">
+
+
+                <div class="hospital-icon">
+                    🏥
+                </div>
+
+
+                <h1>
+                    Register Your Hospital ❤️
+                </h1>
+
+
+                <p class="subtitle">
+                    Join the LifeLink emergency network.
+                </p>
+
+
+
+                <!-- ================= FORM ================= -->
+
+                <form
+                    id="hospitalForm"
+                    action="./hospital-requests.html"
+                    method="GET"
+                >
+
+
+                    <!-- Hospital Name -->
+
+                    <div class="form-group">
+
+                        <label for="hospitalName">
+                            Hospital Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="hospitalName"
+                            name="hospitalName"
+                            placeholder="Enter hospital name"
+                        >
+
+                        <small id="hospitalNameError"></small>
+
+                    </div>
+
+
+
+                    <!-- License Number -->
+
+                    <div class="form-group">
+
+                        <label for="licenseNumber">
+                            License Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="licenseNumber"
+                            name="licenseNumber"
+                            placeholder="Enter hospital license number"
+                        >
+
+                        <small id="licenseError"></small>
+
+                    </div>
+
+
+
+                    <!-- Address -->
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Hospital Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            placeholder="Enter complete hospital address"
+                        ></textarea>
+
+                        <small id="addressError"></small>
+
+                    </div>
+
+
+
+                    <!-- Contact -->
+
+                    <div class="form-group">
+
+                        <label for="contact">
+                            Contact Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="contact"
+                            name="contact"
+                            maxlength="10"
+                            inputmode="numeric"
+                            placeholder="Enter 10-digit contact number"
+                        >
+
+                        <small id="contactError"></small>
+
+                    </div>
+
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter hospital email"
+                        >
+
+                        <small id="emailError"></small>
+
+                    </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a secure password"
+                        >
+
+                        <small id="passwordError"></small>
+
+                    </div>
+
+
+
+                    <!-- Terms -->
+
+                    <div class="terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                        >
+
+                        <label for="terms">
+                            I agree to the Terms & Conditions
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- Register Button -->
+
+                    <button
+                        type="submit"
+                        class="register-btn"
+                    >
+                        🏥 Register Hospital
+                    </button>
+
+
+                </form>
+
+
+            </div>
+
+
+        </section>
+
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="hospital-register.js"></script>
+
+
+</body>
+
+</html>

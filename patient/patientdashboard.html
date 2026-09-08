@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink - Patient Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="patient.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <!-- Top Navigation -->
+    <header class="top-navbar">
+
+        <div class="logo">
+            <span>❤️</span>
+            <h2>LifeLink</h2>
+        </div>
+
+        <nav class="main-nav">
+            <a href="patientdashboard.html" class="active">Dashboard</a>
+            <a href="patient-profile.html">My Profile</a>
+            <a href="emergency-request.html">Emergency Request</a>
+            <a href="my-requests.html">My Requests</a>
+        </nav>
+
+        <button class="logout-btn">Logout</button>
+
+    </header>
+
+<!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+
+            <div>
+                <h1>Patient Dashboard</h1>
+                <p>Manage your emergency blood and organ donation requests.</p>
+            </div>
+
+            <div class="patient-info">
+                <span>👤</span>
+                <div>
+                    <strong>Patient</strong>
+                    <small>Patient Account</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- Welcome Section -->
+        <section class="welcome-card">
+
+            <div>
+                <h2>Welcome Back! ❤️</h2>
+
+                <p>
+                    Find help quickly and manage your blood or organ
+                    donation requests from one place.
+                </p>
+            </div>
+
+            <button class="emergency-btn">
+                🚨 Raise Emergency Request
+            </button>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <span>🚨</span>
+                <h3>0</h3>
+                <p>Active Requests</p>
+            </div>
+
+            <div class="stat-card">
+                <span>❤️</span>
+                <h3>0</h3>
+                <p>Accepted Requests</p>
+            </div>
+
+            <div class="stat-card">
+                <span>✅</span>
+                <h3>0</h3>
+                <p>Completed Requests</p>
+            </div>
+
+        </section>
+
+
+        <!-- Recent Requests -->
+        <section class="requests-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>My Recent Requests</h2>
+                    <p>Track your emergency blood and organ requests.</p>
+                </div>
+
+                <button class="view-all-btn">
+                    View All
+                </button>
+            </div>
+
+
+            <div class="request-container">
+
+                <!-- Request Card -->
+                <div class="request-card">
+
+                    <div class="request-header">
+                        <span class="request-type blood">
+                            🩸 Blood
+                        </span>
+
+                        <span class="status pending">
+                            Pending
+                        </span>
+                    </div>
+
+                    <h3>O- Blood Required</h3>
+
+                    <p>
+                        <strong>Hospital:</strong>
+                        PGI Chandigarh
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        Chandigarh
+                    </p>
+
+                    <p>
+                        <strong>Priority:</strong>
+                        Critical
+                    </p>
+
+                    <button class="details-btn">
+                        View Details
+                    </button>
+
+                </div>
+
+
+                <!-- Organ Request Example -->
+                <div class="request-card">
+
+                    <div class="request-header">
+                        <span class="request-type organ">
+                            🫀 Organ
+                        </span>
+
+                        <span class="status accepted">
+                            Accepted
+                        </span>
+                    </div>
+
+                    <h3>Kidney Required</h3>
+
+                    <p>
+                        <strong>Hospital:</strong>
+                        Fortis Hospital
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        Mohali
+                    </p>
+
+                    <p>
+                        <strong>Priority:</strong>
+                        High
+                    </p>
+
+                    <button class="details-btn">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="patient.js"></script>
+
+</body>
+</html>

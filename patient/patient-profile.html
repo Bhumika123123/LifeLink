@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink - Patient Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="patient.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <!-- Top Navigation -->
+    <header class="top-navbar">
+
+        <div class="logo">
+            <span>❤️</span>
+            <h2>LifeLink</h2>
+        </div>
+
+        <nav class="main-nav">
+            <a href="patientdashboard.html">Dashboard</a>
+            <a href="patient-profile.html" class="active">My Profile</a>
+            <a href="emergency-request.html">Emergency Request</a>
+            <a href="my-requests.html">My Requests</a>
+        </nav>
+
+        <button class="logout-btn">Logout</button>
+
+    </header>
+
+<!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+
+            <div>
+                <h1>My Profile</h1>
+
+                <p>
+                    View and manage your personal information.
+                </p>
+            </div>
+
+            <div class="patient-info">
+
+                <span>👤</span>
+
+                <div>
+                    <strong>Patient</strong>
+                    <small>Patient Account</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Profile Card -->
+        <section class="profile-card">
+
+            <!-- Profile Header -->
+            <div class="profile-header">
+
+                <div class="profile-avatar">
+                    👤
+                </div>
+
+                <div>
+                    <h2>Patient Account</h2>
+                    <p>Registered LifeLink Patient</p>
+                </div>
+
+                <button class="edit-profile-btn" id="editProfileBtn">
+                    ✏️ Edit Profile
+                </button>
+
+            </div>
+
+
+            <!-- Personal Information -->
+            <div class="profile-section">
+
+                <h3>Personal Information</h3>
+
+                <div class="profile-grid">
+
+                    <div class="profile-field">
+                        <label>Full Name</label>
+                        <p id="patientName">Harman Verma</p>
+                    </div>
+
+                    <div class="profile-field">
+                        <label>Email Address</label>
+                        <p id="patientEmail">
+                            patient@example.com
+                        </p>
+                    </div>
+
+                    <div class="profile-field">
+                        <label>Phone Number</label>
+                        <p id="patientPhone">
+                            +91 98765 43210
+                        </p>
+                    </div>
+
+                    <div class="profile-field">
+                        <label>Age</label>
+                        <p id="patientAge">21</p>
+                    </div>
+
+                    <div class="profile-field">
+                        <label>Gender</label>
+                        <p id="patientGender">Female</p>
+                    </div>
+
+                    <div class="profile-field">
+                        <label>Blood Group</label>
+                        <p id="patientBloodGroup">O+</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Information -->
+            <div class="profile-section">
+
+                <h3>Contact Information</h3>
+
+                <div class="profile-grid">
+
+                    <div class="profile-field full-width">
+                        <label>Address</label>
+
+                        <p id="patientAddress">
+                            Chandigarh, Punjab, India
+                        </p>
+                    </div>
+
+                    <div class="profile-field">
+                        <label>Emergency Contact</label>
+
+                        <p id="emergencyContact">
+                            +91 98765 12345
+                        </p>
+                    </div>
+
+                    <div class="profile-field">
+                        <label>Relationship</label>
+
+                        <p id="contactRelationship">
+                            Parent
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Medical Information -->
+            <div class="profile-section">
+
+                <h3>Medical Information</h3>
+
+                <div class="profile-grid">
+
+                    <div class="profile-field">
+                        <label>Medical Condition</label>
+
+                        <p id="medicalCondition">
+                            Not specified
+                        </p>
+                    </div>
+
+                    <div class="profile-field">
+                        <label>Organ Requirement</label>
+
+                        <p id="organRequirement">
+                            None
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="patient.js"></script>
+
+</body>
+
+</html>

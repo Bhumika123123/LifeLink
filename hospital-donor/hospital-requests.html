@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Dashboard | LifeLink</title>
+
+    <link rel="stylesheet" href="hospital-requests.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo-section">
+
+            <div class="logo-icon">
+                ♥
+            </div>
+
+            <div class="logo-text">
+
+                <h2>LifeLink</h2>
+
+                <p>
+                    Smart Emergency Blood & Organ Donor Network
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav class="nav-links">
+
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#" class="active">
+                Donor Requests
+            </a>
+
+            <a href="#">
+                Hospitals
+            </a>
+
+            <a href="#">
+                About Us
+            </a>
+
+
+            <!-- REGISTERED HOSPITAL -->
+
+            <div class="hospital-badge">
+
+                <span>
+                    Registered Hospital
+                </span>
+
+                <strong id="registeredHospitalName">
+                    Not registered
+                </strong>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= MAIN PAGE ================= -->
+
+    <main class="page">
+
+
+        <!-- ================= PAGE HEADING ================= -->
+
+        <section class="page-heading">
+
+            <h1>
+                Donor Requests
+            </h1>
+
+            <p class="subtitle">
+                Review incoming donor requests and decide which requests to accept.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= SUMMARY ================= -->
+
+        <section class="summary-grid">
+
+
+            <div class="summary-card">
+
+                <span>
+                    Total Requests
+                </span>
+
+                <strong id="totalCount">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-card pending">
+
+                <span>
+                    Pending
+                </span>
+
+                <strong id="pendingCount">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-card accepted">
+
+                <span>
+                    Accepted
+                </span>
+
+                <strong id="acceptedCount">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-card rejected">
+
+                <span>
+                    Rejected
+                </span>
+
+                <strong id="rejectedCount">
+                    0
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= FILTER ================= -->
+
+        <section class="filter-bar">
+
+            <button
+                class="filter-btn active"
+                data-filter="All"
+            >
+                All
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="Pending"
+            >
+                Pending
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="Accepted"
+            >
+                Accepted
+            </button>
+
+
+            <button
+                class="filter-btn"
+                data-filter="Rejected"
+            >
+                Rejected
+            </button>
+
+        </section>
+
+
+
+        <!-- ================= REQUESTS ================= -->
+
+        <section
+            id="requestsList"
+            class="requests-list"
+        ></section>
+
+
+    </main>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="hospital-requests.js"></script>
+
+</body>
+
+</html>

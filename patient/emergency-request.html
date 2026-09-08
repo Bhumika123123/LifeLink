@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink - Emergency Request</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="patient.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <!-- Top Navigation -->
+    <header class="top-navbar">
+
+        <div class="logo">
+            <span>❤️</span>
+            <h2>LifeLink</h2>
+        </div>
+
+        <nav class="main-nav">
+            <a href="patientdashboard.html">Dashboard</a>
+            <a href="patient-profile.html">My Profile</a>
+            <a href="emergency-request.html" class="active">Emergency Request</a>
+            <a href="my-requests.html">My Requests</a>
+        </nav>
+
+        <button class="logout-btn">Logout</button>
+
+    </header>
+
+<!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div>
+                <h1>Raise Emergency Request</h1>
+
+                <p>
+                    Request blood or organ donation assistance.
+                </p>
+            </div>
+
+            <div class="patient-info">
+
+                <span>👤</span>
+
+                <div>
+                    <strong>Patient</strong>
+                    <small>Patient Account</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Emergency Form Card -->
+        <section class="emergency-form-card">
+
+            <div class="form-heading">
+
+                <div class="emergency-icon">
+                    🚨
+                </div>
+
+                <div>
+                    <h2>Emergency Donation Request</h2>
+
+                    <p>
+                        Provide accurate information so hospitals
+                        and suitable donors can respond quickly.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Form -->
+            <form id="emergencyForm">
+
+                <!-- Donation Type -->
+                <div class="form-section">
+
+                    <h3>1. What do you need?</h3>
+
+                    <div class="donation-options">
+
+                        <label class="donation-option">
+
+                            <input
+                                type="radio"
+                                name="donationType"
+                                value="blood"
+                                id="bloodOption"
+                                checked
+                            >
+
+                            <div>
+                                <span class="option-icon">
+                                    🩸
+                                </span>
+
+                                <strong>Blood Donation</strong>
+
+                                <small>
+                                    Request blood for an emergency.
+                                </small>
+                            </div>
+
+                        </label>
+
+
+                        <label class="donation-option">
+
+                            <input
+                                type="radio"
+                                name="donationType"
+                                value="organ"
+                                id="organOption"
+                            >
+
+                            <div>
+                                <span class="option-icon">
+                                    🫀
+                                </span>
+
+                                <strong>Organ Donation</strong>
+
+                                <small>
+                                    Request an organ for transplantation.
+                                </small>
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Blood Information -->
+                <div
+                    class="conditional-section"
+                    id="bloodSection"
+                >
+
+                    <h3>2. Blood Information</h3>
+
+                    <div class="form-group">
+
+                        <label for="bloodGroup">
+                            Blood Group
+                        </label>
+
+                        <select id="bloodGroup">
+
+                            <option value="">
+                                Select Blood Group
+                            </option>
+
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Organ Information -->
+                <div
+                    class="conditional-section"
+                    id="organSection"
+                    style="display: none;"
+                >
+
+                    <h3>2. Organ Information</h3>
+
+                    <div class="form-group">
+
+                        <label for="organRequired">
+                            Organ Required
+                        </label>
+
+                        <select id="organRequired">
+
+                            <option value="">
+                                Select Organ
+                            </option>
+
+                            <option value="Kidney">
+                                Kidney
+                            </option>
+
+                            <option value="Liver">
+                                Liver
+                            </option>
+
+                            <option value="Heart">
+                                Heart
+                            </option>
+
+                            <option value="Lung">
+                                Lung
+                            </option>
+
+                            <option value="Pancreas">
+                                Pancreas
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hospital Information -->
+                <div class="form-section">
+
+                    <h3>3. Hospital Information</h3>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="hospital">
+                                Hospital
+                            </label>
+
+                            <input
+                                type="text"
+                                id="hospital"
+                                placeholder="Enter hospital name"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="location">
+                                Location
+                            </label>
+
+                            <input
+                                type="text"
+                                id="location"
+                                placeholder="Enter city/location"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Emergency Details -->
+                <div class="form-section">
+
+                    <h3>4. Emergency Details</h3>
+
+                    <div class="form-group">
+
+                        <label for="priority">
+                            Priority
+                        </label>
+
+                        <select id="priority">
+
+                            <option value="">
+                                Select Priority
+                            </option>
+
+                            <option value="Critical">
+                                Critical
+                            </option>
+
+                            <option value="High">
+                                High
+                            </option>
+
+                            <option value="Normal">
+                                Normal
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="description">
+                            Description
+                        </label>
+
+                        <textarea
+                            id="description"
+                            rows="5"
+                            placeholder="Describe the emergency requirement..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Submit -->
+                <div class="form-actions">
+
+                    <button
+                        type="reset"
+                        class="cancel-btn"
+                    >
+                        Clear
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="submit-request-btn"
+                    >
+                        🚨 Submit Emergency Request
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="patient.js"></script>
+
+</body>
+
+</html>

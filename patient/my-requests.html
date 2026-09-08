@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink - My Requests</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="patient.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <!-- Top Navigation -->
+    <header class="top-navbar">
+
+        <div class="logo">
+            <span>❤️</span>
+            <h2>LifeLink</h2>
+        </div>
+
+        <nav class="main-nav">
+            <a href="patientdashboard.html">Dashboard</a>
+            <a href="patient-profile.html">My Profile</a>
+            <a href="emergency-request.html">Emergency Request</a>
+            <a href="my-requests.html" class="active">My Requests</a>
+        </nav>
+
+        <button class="logout-btn">Logout</button>
+
+    </header>
+
+<!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div>
+                <h1>My Requests</h1>
+
+                <p>
+                    Track all your blood and organ donation requests.
+                </p>
+            </div>
+
+            <div class="patient-info">
+
+                <span>👤</span>
+
+                <div>
+                    <strong>Patient</strong>
+                    <small>Patient Account</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Request Summary -->
+        <section class="request-summary">
+
+            <div>
+                <strong>4</strong>
+                <span>Total Requests</span>
+            </div>
+
+            <div>
+                <strong>1</strong>
+                <span>Pending</span>
+            </div>
+
+            <div>
+                <strong>2</strong>
+                <span>Accepted</span>
+            </div>
+
+            <div>
+                <strong>1</strong>
+                <span>Completed</span>
+            </div>
+
+        </section>
+
+
+        <!-- Filter Tabs -->
+        <section class="requests-page">
+
+            <div class="request-tabs">
+
+                <button class="request-tab active" data-status="all">
+                    All
+                </button>
+
+                <button class="request-tab" data-status="Pending">
+                    Pending
+                </button>
+
+                <button class="request-tab" data-status="Accepted">
+                    Accepted
+                </button>
+
+                <button class="request-tab" data-status="Rejected">
+                    Rejected
+                </button>
+
+                <button class="request-tab" data-status="Completed">
+                    Completed
+                </button>
+
+            </div>
+
+
+            <!-- Request List -->
+            <div class="all-request-container" id="requestList">
+
+                <!-- Blood Request -->
+                <div class="full-request-card" data-status="Pending">
+
+                    <div class="full-request-top">
+
+                        <div>
+
+                            <span class="request-type blood">
+                                🩸 Blood
+                            </span>
+
+                            <h2>O- Blood Required</h2>
+
+                        </div>
+
+                        <span class="status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <div class="request-information">
+
+                        <div>
+                            <label>Hospital</label>
+                            <p>PGI Chandigarh</p>
+                        </div>
+
+                        <div>
+                            <label>Location</label>
+                            <p>Chandigarh</p>
+                        </div>
+
+                        <div>
+                            <label>Priority</label>
+                            <p>Critical</p>
+                        </div>
+
+                        <div>
+                            <label>Request Date</label>
+                            <p>13 Aug 2026</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="request-footer">
+
+                        <span>
+                            Request ID: #LL1001
+                        </span>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Organ Request -->
+                <div class="full-request-card" data-status="Accepted">
+
+                    <div class="full-request-top">
+
+                        <div>
+
+                            <span class="request-type organ">
+                                🫀 Organ
+                            </span>
+
+                            <h2>Kidney Required</h2>
+
+                        </div>
+
+                        <span class="status accepted">
+                            Accepted
+                        </span>
+
+                    </div>
+
+
+                    <div class="request-information">
+
+                        <div>
+                            <label>Hospital</label>
+                            <p>Fortis Hospital</p>
+                        </div>
+
+                        <div>
+                            <label>Location</label>
+                            <p>Mohali</p>
+                        </div>
+
+                        <div>
+                            <label>Priority</label>
+                            <p>High</p>
+                        </div>
+
+                        <div>
+                            <label>Request Date</label>
+                            <p>12 Aug 2026</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="request-footer">
+
+                        <span>
+                            Request ID: #LL1002
+                        </span>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Completed Blood Request -->
+                <div class="full-request-card" data-status="Completed">
+
+                    <div class="full-request-top">
+
+                        <div>
+
+                            <span class="request-type blood">
+                                🩸 Blood
+                            </span>
+
+                            <h2>A+ Blood Required</h2>
+
+                        </div>
+
+                        <span class="status completed">
+                            Completed
+                        </span>
+
+                    </div>
+
+
+                    <div class="request-information">
+
+                        <div>
+                            <label>Hospital</label>
+                            <p>Max Hospital</p>
+                        </div>
+
+                        <div>
+                            <label>Location</label>
+                            <p>Mohali</p>
+                        </div>
+
+                        <div>
+                            <label>Priority</label>
+                            <p>High</p>
+                        </div>
+
+                        <div>
+                            <label>Request Date</label>
+                            <p>08 Aug 2026</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="request-footer">
+
+                        <span>
+                            Request ID: #LL1003
+                        </span>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Rejected Organ Request -->
+                <div class="full-request-card" data-status="Rejected">
+
+                    <div class="full-request-top">
+
+                        <div>
+
+                            <span class="request-type organ">
+                                🫀 Organ
+                            </span>
+
+                            <h2>Liver Required</h2>
+
+                        </div>
+
+                        <span class="status rejected">
+                            Rejected
+                        </span>
+
+                    </div>
+
+
+                    <div class="request-information">
+
+                        <div>
+                            <label>Hospital</label>
+                            <p>PGI Chandigarh</p>
+                        </div>
+
+                        <div>
+                            <label>Location</label>
+                            <p>Chandigarh</p>
+                        </div>
+
+                        <div>
+                            <label>Priority</label>
+                            <p>Critical</p>
+                        </div>
+
+                        <div>
+                            <label>Request Date</label>
+                            <p>05 Aug 2026</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="request-footer">
+
+                        <span>
+                            Request ID: #LL1004
+                        </span>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="patient.js"></script>
+
+</body>
+
+</html>
